@@ -15,9 +15,9 @@ skidinc.options.options = [{
     accept: ['enable', 'disable'],
     exec: 'skidinc.options.switchTyped'
 }];
-skidinc.options.themesUnlocked = [true, false, false];
+skidinc.options.themesUnlocked = [true, true, true];
 skidinc.options.typed = true;
-skidinc.options.matrixEnabled = false;
+skidinc.options.matrixEnabled = true;
 
 skidinc.options.tab = 'overview';
 skidinc.options.tabs = ['overview', 'autoscripts', 'battery', 'prestige'];

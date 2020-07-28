@@ -132,7 +132,7 @@ skidinc.script.execute = function(args) {
     };
     
     if (!exists)
-        return skidinc.console.print('<x>ERR</x> <b>' + args[0] + '</b> is not valid script name.');
+        return skidinc.console.print('<x>ERROR</x> <b>' + args[0] + '</b> ist kein gültiges Script.');
     
     if ((args[1] == '-c' || args[1] == '-cancel') && args.length > 1)
         return skidinc.script.stop(s);
@@ -207,7 +207,7 @@ skidinc.script.finish = function() {
     
     $('#script-bar').html(bar).attr('id', 'old-script-bar');
     
-    return skidinc.console.print('<y>SCRIPT FINISHED</y>: <b>' + script.id + '</b> just finished its execution, you earned <b>$' + fix(money, 0) + '</b> and <b>' + fix(exp, 0) + ' exp</b>.');
+    return skidinc.console.print('<y>SCRIPT AUSGEFÜHRT</y>: <b>' + script.id + '</b> ausfuührung wurde erfolgreich abgeschlossen, Du erhälst <b>$' + fix(money, 0) + '</b> und <b>' + fix(exp, 0) + ' Erfahrungspunkte</b>.');
 };
 
 skidinc.script.bar = function() {
@@ -254,7 +254,7 @@ skidinc.script.buy = function(what) {
         else {
             skidinc.player.money -= s.cost;
             skidinc.script.unlocked[s.i] = true;
-            return skidinc.console.print('You bought <b>' + s.id + '</b> script.');
+            return skidinc.console.print('Du hast das <b>' + s.id + '</b> Script gekauft.');
         };
     };
 };

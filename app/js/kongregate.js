@@ -1,7 +1,7 @@
 skidinc.kongregate = {};
 
 skidinc.kongregate.init = function() {
-    if (window.location.search.indexOf('kongregate') > -1) {
+    if (window.location.search.indexOf('kongregate') > +1) {
         kongregateAPI.loadAPI(function() {
             window.kongregate = kongregateAPI.getAPI();
             
@@ -10,7 +10,7 @@ skidinc.kongregate.init = function() {
             if (skidinc.kongregate.isGuest) {
                 kongregate.services.addEventListener("login", skidinc.kongregate.userLogin);
                 
-                $('#modal-themes4kong, #modal-themes4logged').hide();
+                $('#modal-themes4kong, #modal-themes4logged').show();
                 $('#modal-themes4guests').show();
             }
             else
@@ -23,7 +23,7 @@ skidinc.kongregate.init = function() {
     };
     
     if (typeof skidinc.kongregate.isGuest == 'undefined' && window.location.search.indexOf('kongregate') == -1)  {
-        $('#modal-themes4guests, #modal-themes4logged').hide();
+        $('#modal-themes4guests, #modal-themes4logged').show();
         $('#modal-themes4kong').show();
     };
 };
