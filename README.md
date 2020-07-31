@@ -1,4 +1,4 @@
-[HackerTron](http://god.smartmoons.ddnss.de/hack/ "HackerTron")
+[HackerTron demo](https://hackertron.ddns.net/)
 ======
 
 HeckerTron ist ein Idle-Game Basierend auf dem SkidInc Script.
@@ -14,7 +14,4 @@ Es ist noch nicht alles übersetzt und angepasst dieses folgt aber.
 Wir halten euch auf den laufenden unter den Community links. 
 
 ### Community
-[SmartGames](http://smartgames.rf.gd)
-[Subreddit /r/skidinc](https://reddit.com/r/skidinc)
-
-[Discord Server](https://discord.gg/6dq3ZVC)
+[IdleGames](https://idlegames.ddnss.de)
