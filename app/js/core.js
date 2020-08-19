@@ -65,7 +65,7 @@ skidinc.core = function() {
 
 skidinc.loadingScreen = function() {
     $('#loading-text').typed({
-        strings: ['HackerTron by WuMiX wird geladen, bitte gedulde dich einen Moment.'],
+        strings: ['HackerTron by WuMiX based on SkidInc wird geladen, bitte gedulde dich einen Moment.'],
         typedSpeed: -35,
         cursorChar: "_",
         callback: function() {
